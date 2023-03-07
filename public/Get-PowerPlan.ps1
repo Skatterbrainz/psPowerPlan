@@ -1,22 +1,40 @@
+<#
+.SYNOPSIS
+Returns Windows power plans.
+
+.DESCRIPTION
+Returns all Windows power plans or just the active power plan.
+
+.PARAMETER ID
+Optional GUID for a specific power plan (default is to return all power plans)
+
+.PARAMETER ComputerName
+Optional name of a remote computer. Default is local computer.
+
+.PARAMETER IsActive
+Optional. Return only the active power plan
+
+.EXAMPLE
+Get-PowerPlan
+
+Returns all power plans defined on the local computer
+
+.EXAMPLE
+Get-PowerPlan -IsActive
+
+Returns the current power plan for the local computer
+
+.EXAMPLE
+Get-PowerPlan -IsActive -ComputerName WS123
+
+Returns the current power plan for computer WS123
+
+.LINK
+https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlan.md
+#>
+
 function Get-PowerPlan {
 	[CmdletBinding()]
-	[OutputType()]
-	<#
-	.SYNOPSIS
-		Returns the active Power Plan Name
-	.DESCRIPTION
-		Returns the active Power Plan Name
-	.PARAMETER ID
-		Optional GUID for a specific power plan (default is to return all power plans)
-	.PARAMETER ComputerName
-		Optional name of a remote computer. Default is local computer.
-	.PARAMETER IsActive
-		Optional. Return only the active power plan
-	.EXAMPLE
-		Get-PowerPlan
-	.LINK
-		https://github.com/Skatterbrainz/ds-utils/blob/master/docs/Get-PowerPlan.md
-	#>
 	param (
 		[parameter()][string]$ID = "",
 		[parameter()][string]$ComputerName = "",

@@ -32,7 +32,7 @@ Set-PowerPlan -ID 381b4222-f694-41f0-9685-ff5bb260df2e
 GUID of power plan to set active
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 

@@ -1,7 +1,7 @@
 ---
 external help file: psPowerPlan-help.xml
 Module Name: psPowerPlan
-online version:
+online version: https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Remove-PowerPlan.md
 schema: 2.0.0
 ---
 
@@ -34,7 +34,7 @@ Deletes power plan with ID of 381b4222-f694-41f0-9685-ff5bb260df2e
 The GUID for the power plan to be removed
 
 ```yaml
-Type: Guid
+Type: System.Guid
 Parameter Sets: (All)
 Aliases:
 
@@ -55,3 +55,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
+[https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Remove-PowerPlan.md](https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Remove-PowerPlan.md)
+

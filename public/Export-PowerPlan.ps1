@@ -23,10 +23,9 @@ function Export-PowerPlan {
 		Exports all power plans to c:\temp as .txt files
 	.NOTES
 	.LINK
-
+		https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Export-PowerPlan.md
 	#>
 	[CmdletBinding()]
-	[OutputType([psobject])]
 	param (
 		[parameter(Mandatory, ValueFromPipeline=$True)][string[]]$ID,
 		[parameter()][string]$Path = "$($env:TEMP)",

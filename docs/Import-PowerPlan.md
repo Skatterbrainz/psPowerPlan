@@ -1,7 +1,7 @@
 ---
 external help file: psPowerPlan-help.xml
 Module Name: psPowerPlan
-online version:
+online version: https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Import-PowerPlan.md
 schema: 2.0.0
 ---
 
@@ -32,7 +32,7 @@ Import-PowerPlan -FilePath "c:\temp\mypowerplan.pow"
 Path and name of .pow file to import
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -50,7 +50,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.Management.Automation.PSObject
 ## NOTES
 
 ## RELATED LINKS
+
+[https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Import-PowerPlan.md](https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Import-PowerPlan.md)
+

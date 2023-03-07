@@ -1,7 +1,7 @@
 ---
 external help file: psPowerPlan-help.xml
 Module Name: psPowerPlan
-online version:
+online version: https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanAlias.md
 schema: 2.0.0
 ---
 
@@ -17,7 +17,7 @@ Get-PowerPlanAlias [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Returns all power plan settings, including name, type and parent/child association
 
 ## EXAMPLES
 
@@ -38,3 +38,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
+[https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanAlias.md](https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanAlias.md)
+

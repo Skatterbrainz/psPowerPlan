@@ -1,14 +1,14 @@
 ---
 external help file: psPowerPlan-help.xml
 Module Name: psPowerPlan
-online version:
+online version: https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlan.md
 schema: 2.0.0
 ---
 
 # Get-PowerPlan
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Returns Windows power plans.
 
 ## SYNTAX
 
@@ -17,24 +17,38 @@ Get-PowerPlan [[-ID] <String>] [[-ComputerName] <String>] [-IsActive] [<CommonPa
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+Returns all Windows power plans or just the active power plan.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Get-PowerPlan
 ```
 
-{{ Add example description here }}
+Returns all power plans defined on the local computer
+
+### EXAMPLE 2
+```
+Get-PowerPlan -IsActive
+```
+
+Returns the current power plan for the local computer
+
+### EXAMPLE 3
+```
+Get-PowerPlan -IsActive -ComputerName WS123
+```
+
+Returns the current power plan for computer WS123
 
 ## PARAMETERS
 
-### -ComputerName
-{{ Fill ComputerName Description }}
+### -ID
+Optional GUID for a specific power plan (default is to return all power plans)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -45,32 +59,34 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ID
-{{ Fill ID Description }}
+### -ComputerName
+Optional name of a remote computer.
+Default is local computer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 0
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -IsActive
-{{ Fill IsActive Description }}
+Optional.
+Return only the active power plan
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -80,11 +96,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
 ## OUTPUTS
 
-### System.Object
 ## NOTES
 
 ## RELATED LINKS
+
+[https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlan.md](https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlan.md)
+

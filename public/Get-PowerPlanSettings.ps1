@@ -1,4 +1,17 @@
 function Get-PowerPlanSettings {
+	<#
+	.SYNOPSIS
+	.DESCRIPTION
+	.PARAMETER ID
+		Optional GUID for a specific power plan setting
+	.PARAMETER ComputerName
+		Optional name for remote computer to query. Default is local computer
+	.EXAMPLE
+		Get-PowerPlanSettings
+	.NOTES
+	.LINK
+		https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanSettings.md
+	#>
 	[CmdletBinding()]
 	param (
 		[parameter()][string]$ID = "",

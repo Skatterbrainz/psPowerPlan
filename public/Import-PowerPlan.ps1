@@ -10,8 +10,8 @@ function Import-PowerPlan {
 		Import-PowerPlan -FilePath "c:\temp\mypowerplan.pow"
 	.NOTES
 	.LINK
+		https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Import-PowerPlan.md
 	#>
-	[OutputType([psobject])]
 	[CmdletBinding()]
 	param (
 		[parameter(Mandatory)][string]$FilePath

@@ -3,11 +3,13 @@ function Get-PowerPlanAlias {
 	.SYNOPSIS
 		Get Power Plan aliases
 	.DESCRIPTION
+		Returns all power plan settings, including name, type and parent/child association
 	.PARAMETER (none)
 	.EXAMPLE
 		Get-PowerPlanAlias
 	.NOTES
 	.LINK
+		https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanAlias.md
 	#>
 	[CmdletBinding()]
 	param ()
