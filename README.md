@@ -1,2 +1,3 @@
 # psPowerPlan
-Windows Power Plan Utility Functions
+
+Windows Power Plan management functions
