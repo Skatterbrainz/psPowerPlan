@@ -32,7 +32,7 @@ Import-PowerPlan -FilePath "c:\temp\mypowerplan.pow"
 Path and name of .pow file to import
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 

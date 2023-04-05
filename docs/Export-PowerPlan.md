@@ -24,23 +24,20 @@ Export a Windows Power Plan configuration to a .pow file
 ### EXAMPLE 1
 ```
 Export-PowerPlan -ID 381b4222-f694-41f0-9685-ff5bb260df2e -Path c:\temp
-```
-
 Exports the power plan to c:\temp\381b4222-f694-41f0-9685-ff5bb260df2e.pow
+```
 
 ### EXAMPLE 2
 ```
 Export-PowerPlan -ID 381b4222-f694-41f0-9685-ff5bb260df2e -Path c:\temp -FileType txt
-```
-
 Exports the power plan to c:\temp\381b4222-f694-41f0-9685-ff5bb260df2e.txt
+```
 
 ### EXAMPLE 3
 ```
 Get-PowerPlan | Select-Object -ExpandProperty ID | Export-PowerPlan -Path c:\temp -FileType txt
-```
-
 Exports all power plans to c:\temp as .txt files
+```
 
 ## PARAMETERS
 
@@ -49,7 +46,7 @@ GUID for Power Plan.
 Use Get-PowerPlan to list plan names and ID values.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +62,7 @@ Path where file is exported.
 Default is $env:TEMP
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +78,7 @@ Options are 'pow' or 'txt'.
 Default is 'pow'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 

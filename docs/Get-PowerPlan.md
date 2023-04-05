@@ -24,23 +24,20 @@ Returns all Windows power plans or just the active power plan.
 ### EXAMPLE 1
 ```
 Get-PowerPlan
-```
-
 Returns all power plans defined on the local computer
+```
 
 ### EXAMPLE 2
 ```
 Get-PowerPlan -IsActive
-```
-
 Returns the current power plan for the local computer
+```
 
 ### EXAMPLE 3
 ```
 Get-PowerPlan -IsActive -ComputerName WS123
-```
-
 Returns the current power plan for computer WS123
+```
 
 ## PARAMETERS
 
@@ -48,7 +45,7 @@ Returns the current power plan for computer WS123
 Optional GUID for a specific power plan (default is to return all power plans)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +61,7 @@ Optional name of a remote computer.
 Default is local computer.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +77,7 @@ Optional.
 Return only the active power plan
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 

@@ -24,9 +24,8 @@ Delete a specific Windows power plan
 ### EXAMPLE 1
 ```
 Remove-PowerPlan -ID 381b4222-f694-41f0-9685-ff5bb260df2e
-```
-
 Deletes power plan with ID of 381b4222-f694-41f0-9685-ff5bb260df2e
+```
 
 ## PARAMETERS
 
@@ -34,7 +33,7 @@ Deletes power plan with ID of 381b4222-f694-41f0-9685-ff5bb260df2e
 The GUID for the power plan to be removed
 
 ```yaml
-Type: System.Guid
+Type: Guid
 Parameter Sets: (All)
 Aliases:
 

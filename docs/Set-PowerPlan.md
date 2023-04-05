@@ -13,7 +13,7 @@ Set Active Power Plan
 ## SYNTAX
 
 ```
-Set-PowerPlan [-ID] <String> [<CommonParameters>]
+Set-PowerPlan [[-ID] <String>] [-Interactive] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +32,29 @@ Set-PowerPlan -ID 381b4222-f694-41f0-9685-ff5bb260df2e
 GUID of power plan to set active
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: 1
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Interactive
+If ID is not provided, and Interactive is requested, the available Power plans
+are displayed in a GridView to select one to set active.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -1,18 +1,19 @@
 ---
 external help file: psPowerPlan-help.xml
 Module Name: psPowerPlan
-online version: https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanSettings.md
+online version: https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanAlias.md
 schema: 2.0.0
 ---
 
-# Get-PowerPlanSettings
+# Get-PowerPlanSecDes
 
 ## SYNOPSIS
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
 ```
-Get-PowerPlanSettings [[-ID] <String>] [[-ComputerName] <String>] [<CommonParameters>]
+Get-PowerPlanSecDes [-ID] <Object> [[-Action] <String>] [-Raw] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -20,20 +21,23 @@ Get-PowerPlanSettings [[-ID] <String>] [[-ComputerName] <String>] [<CommonParame
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
-Get-PowerPlanSettings
-```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
-### -ID
-Optional GUID for a specific power plan setting
+### -Action
+{{ Fill Action Description }}
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
+Accepted values: None, SetActive, Create, Default
 
 Required: False
 Position: 1
@@ -42,17 +46,31 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ComputerName
-Optional name for remote computer to query.
-Default is local computer
+### -ID
+{{ Fill ID Description }}
 
 ```yaml
-Type: String
+Type: Object
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Raw
+{{ Fill Raw Description }}
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 2
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -63,11 +81,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### None
+
 ## OUTPUTS
 
+### System.Object
 ## NOTES
 
 ## RELATED LINKS
-
-[https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanSettings.md](https://github.com/Skatterbrainz/psPowerPlan/blob/master/docs/Get-PowerPlanSettings.md)
-
